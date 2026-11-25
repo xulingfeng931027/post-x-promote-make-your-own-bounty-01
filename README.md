@@ -1,30 +1,33 @@
-# Fridge-to-dinner bounty
+# A bounty for dinner
 
 ## Proposed X post
 
 ```text
-Half a cabbage, one egg, a lemon. I'd put up a bounty for an app that turns the last three things in my fridge into dinner. What would you put a bounty on?
+Half a cabbage, one egg, a lemon. I'd offer a bounty for an app that turns those into dinner. What would you pay someone to build?
 
 Make your own bounty on @makefunai: https://make.fun/sponsor/new
 makefun-thrush-microbe-nougat
 https://x.com/makefunai/status/2124915864336236646
 ```
 
-Attach [fridge-bounty.png](fridge-bounty.png) to the standalone post.
-Suggested alt text is “Half a green cabbage, a brown egg, and a yellow lemon on a nearly empty refrigerator shelf.”
+The draft is a standalone X post with [one original photo](fridge-bounty.png) attached.
 
-## Run locally
+**Alt text**
+
+Half a green cabbage, a brown egg, and a yellow lemon on a nearly empty refrigerator shelf.
+
+## Check the entrypoint
 
 ```sh
 MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
 cmp POST.json out/POST.json
 ```
 
-`POST.json` holds a placeholder for the address of the published post. The program copies it byte for byte.
+The Node entrypoint copies `POST.json` byte for byte. The file holds a placeholder for the future X post URL.
 
-## Photo provenance
+## How the photo was made
 
-The original photo was generated with the built-in image tool during the same session as the draft.
+The built-in image generation tool made the photo during this Codex session.
 
 <details>
 <summary>Image prompt</summary>
